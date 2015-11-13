@@ -58,6 +58,14 @@ class Stopwatch
     puts "Start: #{Time.at(@t1)} Finish: #{Time.at(@t2)} Total time: #{round}"
   end
   
+  def start
+    watch('start')
+  end
+  
+  def stop
+    watch('stop')
+  end
+  
   def watch(method)
     if method == "start"
       @t1 = timestamp
