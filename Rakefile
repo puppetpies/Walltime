@@ -18,8 +18,8 @@ end
 
 require 'rubygems/tasks'
 Gem::Tasks.new
-task :default do
-
+task :build do
+  Rake::Task['gem'].invoke
 end
 
 # Override standard release task
