@@ -4,8 +4,8 @@ module Walltime #:nodoc:
 
     MAJOR = 0
     MINOR = 0
-    TINY = 8
-    CODENAME = "Its all Giraffes my son!"
+    TINY = 9
+    CODENAME = "With the Funky Onion!"
 
     STRING = [MAJOR, MINOR, TINY].join('.')
 
