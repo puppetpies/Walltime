@@ -10,6 +10,7 @@
 
 module NumTools
 
+  # Implement more if you wish only interested in round myself right now.
   def random_between(min, max); min+rand(max); end
 
   def self.define_component(name)
@@ -58,14 +59,6 @@ class Stopwatch
     puts "Start: #{Time.at(@t1)} Finish: #{Time.at(@t2)} Total time: #{round}"
   end
   
-  def start
-    watch('start')
-  end
-  
-  def stop
-    watch('stop')
-  end
-  
   def watch(method)
     if method == "start"
       @t1 = timestamp
@@ -73,6 +66,16 @@ class Stopwatch
       @t2 = timestamp
       intervalh
     end
+  end
+  
+  def start(&block)
+    watch('start')
+    block.call
+  end
+  
+  def stop(&block)
+    block.call
+    watch('stop')
   end
 
 end
