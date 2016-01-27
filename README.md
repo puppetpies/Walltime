@@ -1,5 +1,7 @@
 # Walltime
 
+[![Gem Version](https://badge.fury.io/rb/walltime.svg)](https://badge.fury.io/rb/walltime)
+
 Quick IRB Demo
 
 [root@orville Walltime]# irb
