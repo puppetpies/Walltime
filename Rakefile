@@ -5,7 +5,7 @@ VERSION = Walltime::VERSION::STRING
 Gem::Specification.new do |s|
   s.name        = 'walltime'
   s.version     = VERSION
-  s.date        = '2015-09-22'
+  s.date        = '2016-01-29'
   s.summary     = "Walltime"
   s.description = "A Stopwatch you can use in all kinds of things"
   s.authors     = ["Brian Hood"]
@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.files       = ["examples/2seconds.rb", "examples/milliseconds.rb", "lib/walltime.rb", "lib/version.rb"]
   s.homepage    =
     'https://github.com/puppetpies/Walltime'
-  s.license       = 'MIT'
+  s.license       = 'BSD'
 end
 
 require 'rubygems/tasks'
